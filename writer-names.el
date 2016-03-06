@@ -50,9 +50,9 @@
 
 ;;; Code:
 
-(defvar writer-male-names "/home/bnewell/data/census/dist.male.first")
-(defvar writer-female-names "/home/bnewell/data/census/dist.female.first")
-(defvar writer-last-names "/home/bnewell/data/census/dist.all.last")
+(defvar writer-male-names (concat (file-name-directory (buffer-file-name)) "dist.male.first")
+(defvar writer-female-names (concat (file-name-directory (buffer-file-name)) "dist.female.first")
+(defvar writer-last-names (concat (file-name-directory (buffer-file-name)) "dist.all.last")
 
 (defvar writer-male-name-count nil)
 (defvar writer-female-name-count nil)
