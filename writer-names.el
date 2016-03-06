@@ -27,6 +27,9 @@
 
 ;;; Commentary: 
 
+;; Writer-names.el generates random character names intended for use in
+;; fiction writing.
+
 ;; For the moment, simply output one completely random male
 ;; name and one completely random female name. Write to
 ;; minibuffer and put at end of buffer *Random Names*".
