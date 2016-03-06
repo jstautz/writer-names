@@ -5,7 +5,7 @@
 
 (package-file "writer-names.el")
 
-(files ("writer-names.el" "census_data/*.first" "census_data/*.last"))
+(files ("writer-names.el" "*.first" "*.last"))
 
 (development
  (depends-on "f")
