@@ -125,5 +125,8 @@
 ;; Assume we are already at the required line.
   (beginning-of-line)
   (capitalize (thing-at-point 'word))
-)
+  )
+
+(provide 'writer-names)
+
 ;;; writer-names.el ends here
