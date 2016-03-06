@@ -1,4 +1,31 @@
-;; Generate random names from the 1990 census lists.
+;;; writer-names.el --- Generate random names for fiction writing
+
+;; Filename: writer-names.el
+;; Description: Generate random names for fiction writing
+;; Author: Bob Newell
+;; Maintainer: 
+;; Copyright (C) 2012, Bob Newell
+;; Created: April 2012
+;; Version: 0.1
+;; URL: https://github.com/jstautz/writer-names
+;; Keywords: wp
+
+;; This library is not part of GNU Emacs.
+
+;; This program is free software; you can redistribute it and/or
+;; modify it under the terms of the GNU General Public License as
+;; published by the Free Software Foundation; either version 3, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+;; General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+;;; Commentary: 
 
 ;; For the moment, simply output one completely random male
 ;; name and one completely random female name. Write to
@@ -17,6 +44,8 @@
 ;; Bob Newell, Honolulu, Hawai`i, April 2012.
 ;; Suggestions and bug reports to randomnames at bobnewell dot net.
 ;; No warranty, no liabilities accepted.
+
+;;; Code:
 
 (defvar writer-male-names "/home/bnewell/data/census/dist.male.first")
 (defvar writer-female-names "/home/bnewell/data/census/dist.female.first")
@@ -94,4 +123,4 @@
   (beginning-of-line)
   (capitalize (thing-at-point 'word))
 )
-;; ---- end writer-names.el
+;;; writer-names.el ends here
