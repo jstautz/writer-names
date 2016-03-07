@@ -50,9 +50,9 @@
 
 ;;; Code:
 
-(defvar writer-male-names (concat (file-name-directory (buffer-file-name)) "dist.male.first"))
-(defvar writer-female-names (concat (file-name-directory (buffer-file-name)) "dist.female.first"))
-(defvar writer-last-names (concat (file-name-directory (buffer-file-name)) "dist.all.last"))
+(setq writer-male-names nil)
+(setq writer-female-names nil)
+(setq writer-last-names nil)
 
 (defvar writer-male-name-count nil)
 (defvar writer-female-name-count nil)
@@ -76,6 +76,11 @@
 ;; save-excursion gets messed, so do this:
   (setq writer-saved-buffer (current-buffer))
   (setq writer-saved-point (point))
+
+;; set file locations
+(setq writer-male-names (concat (file-name-directory (buffer-file-name)) "dist.male.first"))
+(setq writer-female-names (concat (file-name-directory (buffer-file-name)) "dist.female.first"))
+(setq writer-last-names (concat (file-name-directory (buffer-file-name)) "dist.all.last"))
 
 ;; Check existence of name files.
     (if (and (file-exists-p writer-male-names)
